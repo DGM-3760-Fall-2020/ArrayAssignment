@@ -6,7 +6,7 @@ import {
 } from "../src/objectFunctions.js";
 
 describe("objectCheck()", () => {
-    it("should return true when an array is passed", () => {
+    it("should return true when an object is passed", () => {
         expect(objectCheck( {key: 'value'} )).toBeTruthy();
     });
 
@@ -14,7 +14,7 @@ describe("objectCheck()", () => {
         expect(objectCheck( 'Hello' )).toBeFalsy();
     });
     
-    it("should return false when object is given", () => {
+    it("should return false when an array is given", () => {
         expect(objectCheck( [1, 4] )).toBeFalsy();
     });
 });
